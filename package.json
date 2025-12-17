@@ -1,8 +1,29 @@
 {
   "name": "dsp.js",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Digital Signal Processing for Javascript",
-  "main": "dsp.js",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run build:esm",
+    "build:esm": "tsc",
+    "clean": "rm -rf dist",
+    "test": "echo \"Tests to be migrated\" && exit 0"
+  },
   "directories": {
     "example": "examples",
     "test": "test"
@@ -14,12 +35,19 @@
   "keywords": [
     "dsp",
     "dft",
-    "fft"
+    "fft",
+    "digital-signal-processing",
+    "audio",
+    "typescript",
+    "esm"
   ],
   "author": "Corban Brook",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/corbanbrook/dsp.js/issues"
   },
-  "homepage": "https://github.com/corbanbrook/dsp.js#readme"
+  "homepage": "https://github.com/corbanbrook/dsp.js#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
 }
