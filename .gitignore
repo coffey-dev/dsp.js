@@ -3,3 +3,9 @@ examples/audio
 .project
 *~
 .idea
+node_modules/
+dist/
+*.log
+*.swp
+*.swo
+.vscode/
