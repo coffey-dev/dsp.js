@@ -51,3 +51,63 @@ export { MultiDelay, SingleDelay } from './delays.js';
 
 // Export reverb
 export { Reverb } from './reverb.js';
+
+// Export audio features and analysis (librosa-inspired)
+export {
+  // Basic features
+  getDuration,
+  getZeroCrossingRate,
+
+  // STFT and spectral analysis
+  computeSTFT,
+  getSpectralCentroid,
+  getSpectralRolloff,
+  getSpectralBandwidth,
+
+  // Energy and loudness
+  getRMSEnergy,
+  getLoudness,
+
+  // Tempo and rhythm
+  detectTempo,
+
+  // Key detection
+  detectKey,
+  MUSICAL_KEYS,
+
+  // High-level metrics
+  analyzeAudioMetrics,
+
+  // Types
+  type STFTOptions,
+  type STFTResult,
+  type SpectralOptions,
+  type TempoOptions,
+  type TempoResult,
+  type KeyResult,
+  type MusicalKey,
+  type AudioMetrics,
+} from './audio-features.js';
+
+// Export audio loading utilities
+export {
+  // Loading functions
+  loadAudioFromURI,
+  decodePCM,
+
+  // Audio processing utilities
+  stereoToMono,
+  extractChannel,
+  resample,
+  normalize,
+  trimSilence,
+  applyFade,
+
+  // Integration guide
+  EXPO_INTEGRATION_GUIDE,
+
+  // Types
+  type AudioInfo,
+  type AudioData,
+  type LoadAudioOptions,
+} from './audio-loader.js';

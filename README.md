@@ -2,10 +2,25 @@
 
 **NOTE: This project is no longer maintained (and hasnt been for years). I wrote this when I was much younger and experimenting in Audio and DSP. This is no longer much of a passion of mine.**
 
-DSP.js is a digital signal processing library for javascript. 
-It includes many functions for signal analysis and generation, including 
-Oscillators (sine, saw, square, triangle), Window functions (Hann, Hamming, etc), 
-Envelopes (ADSR), IIR Filters (lowpass, highpass, bandpass, notch), FFT and DFT 
+## 🎵 NEW: Audio Analysis Features (2026)
+
+This fork has been modernized with **comprehensive audio analysis features** inspired by [librosa](https://github.com/librosa/librosa), optimized for **React Native and Expo Go**:
+
+- ✅ **Duration, BPM (Tempo), Key Detection**
+- ✅ **Danceability, Energy, Loudness, Valence**
+- ✅ **STFT (Short-Time Fourier Transform)**
+- ✅ **Spectral features: Centroid, Rolloff, Bandwidth**
+- ✅ **Zero Crossing Rate (ZCR)**
+- ✅ **Audio loading utilities for React Native**
+
+📖 **[See full Audio Features documentation](./AUDIO_FEATURES.md)**
+
+---
+
+DSP.js is a digital signal processing library for javascript.
+It includes many functions for signal analysis and generation, including
+Oscillators (sine, saw, square, triangle), Window functions (Hann, Hamming, etc),
+Envelopes (ADSR), IIR Filters (lowpass, highpass, bandpass, notch), FFT and DFT
 transforms, Delays, Reverb.
 
 ## Modules
